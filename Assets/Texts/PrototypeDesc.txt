@@ -1,0 +1,18 @@
+Welcome to my town simulator prototype.  The primary purpose of the prototype is to get basic systems functioning.  
+
+At this point, you can create roads, houses, wells, farms, and stores.  
+You can also delete any of the above by selecting the delete button and then clicking on the item you wish to delete.  Note that the center of the x should be over the base of the item to delete.  
+
+People will come to inhabit the houses. 
+
+Walkers will emerge from the wells to distribute water to the houses.  
+
+The farms will "grow" by changing colors and eventually send their goods to any stores with storage space available.  
+
+People will go from houses to stores to collect the goods from the stores if they already have water.  
+
+Houses will become darker blue as the "level up," first by having inhabitants, then by having water available, and finally by having food as well as water.  
+
+The interface and "art" are extremely simple, since my goal was to focus on getting the simple system working.  
+
+Any feedback would be welcome.

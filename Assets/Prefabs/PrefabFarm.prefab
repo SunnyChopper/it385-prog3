@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &135450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489458}
+  - 33: {fileID: 3377562}
+  - 64: {fileID: 6440708}
+  - 23: {fileID: 2373356}
+  - 114: {fileID: 11475632}
+  m_Layer: 0
+  m_Name: PrefabFarm
+  m_TagString: ActualObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489458
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalScale: {x: 0.3, y: 1, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2373356
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135450}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 62d2b99dd024f3f408151516918683ff, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3377562
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135450}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &6440708
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11475632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69f38826c1d12b4185300227cd21570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  farmStateMats:
+  - {fileID: 2100000, guid: befb633f6fc760349bb390249b211ded, type: 2}
+  - {fileID: 2100000, guid: 90a66aa5a56742746af3d146a6a598b4, type: 2}
+  - {fileID: 2100000, guid: f3eecb5df75e2bf4d910fecd4b15da0b, type: 2}
+  - {fileID: 2100000, guid: 0cf9933f3045f264ca2941384f3c062d, type: 2}
+  - {fileID: 2100000, guid: 62d2b99dd024f3f408151516918683ff, type: 2}
+  deliveryPrefab: {fileID: 106958, guid: d131fffba6de8164bb70ad29778e2cde, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: ActualObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: befb633f6fc760349bb390249b211ded, type: 2}
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90a66aa5a56742746af3d146a6a598b4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3eecb5df75e2bf4d910fecd4b15da0b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0cf9933f3045f264ca2941384f3c062d, type: 2}
+    - target: {fileID: 0}
+      propertyPath: farmStateMats.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 62d2b99dd024f3f408151516918683ff, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 135450}
+  m_IsPrefabParent: 1
